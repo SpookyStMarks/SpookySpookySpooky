@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="dist/aframe-portals.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v$npm_package_version/dist/aframe-physics-system.min.js"></script>
+</head>
+<body>
+    <a-scene physics="debug: true">
+        <a-sky color="#96953E"></a-sky>
+        <a-entity id="portal1" portal="destination: #portal2; maxRecursion: 1" teleportCooldown="0" scale="7.5 1.7 1" position="-1.5 1 -15" rotation="0 0 0"></a-entity>
+        <a-entity id="portal2" portal="destination: #portal1; maxRecursion: 1" teleportCooldown="0" scale="7.5 1.7 1" position="1.5 1 15" rotation="0 180 0"></a-entity>
+        <a-entity id="portal3" portal="destination: #portal4; maxRecursion: 1" teleportCooldown="0" scale="3 1.7 1" position="15 1 0" rotation="0 270 0"></a-entity>
+        <a-entity id="portal4" portal="destination: #portal3; maxRecursion: 1" teleportCooldown="0" scale="3 1.7 1" position="-15 1 0" rotation="00 90 0"></a-entity>
+        <a-entity ststic-body radius="1.8" camera wasd-controls look-controls acceleration="10" kinematic-body="radius: 1.8;" position="0 1 0"></a-entity>
+        <a-box static-body position="-13.5 1 -13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-10.5 1 -13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 -13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="10.5 1 -13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 -13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 -10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="4.5 1 -10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 -10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 -10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 -7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-7.5 1 -7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 -7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 -7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-10.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-7.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-1.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="4.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 -4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 -1.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-1.5 1 -1.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 -1.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-10.5 1 1.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 1.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="1.5 1 4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 4.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-10.5 1 7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="4.5 1 7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 7.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-1.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="4.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="7.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="13.5 1 10.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-13.5 1 13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-10.5 1 13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-7.5 1 13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="10.5 1 13.5" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-7.5 1 -16.51" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-4.5 1 -16.51" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="-1.5 1 -16.51" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="1.5 1 -16.51" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-box static-body position="4.5 1 -16.51" width="3" height="5" depth="3" rotation="0 0 0" src="desktop-wallpaper-cringys-the-backrooms-by-lamb-chop-yt.jpg"></a-box>
+        <a-plane static-body color="#96953E" width="30" height="30"rotation="-90 0 0"></a-plane>
+    </a-scene>
+    
+</body>
+</html>
